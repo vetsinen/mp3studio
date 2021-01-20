@@ -6,7 +6,6 @@ const Lame = require("node-lame").Lame;
 const directory = '/home/jsdev/Music/bacha5/'
 
 //iterateOnFiles(directory,encodeToRegularBitrate)
-
 function iterateOnFiles(dir, operation=backup_filenameAndTags){
     const files = fs.readdirSync(dir);
     let c=1

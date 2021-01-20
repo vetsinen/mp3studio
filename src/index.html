@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8">
     <script type="text/javascript" src="mp3processor.js"></script>
-    <title>Hello World!</title>
+    <title>mp3 💖studio</title>
     <link rel="stylesheet" href="index.css">
-  </head>
-  <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
-  </body>
-  <script>document.write(iterateOnFiles(directory,encodeToRegularBitrate))</script>
+    <script src="vue.js"></script>
+</head>
+<body>
+<button>change folder</button>
+<button>backup tags</button>
+<input type="text" placeholder="salsa" required size="5" maxlength="5">
+<button>retitle&rename</button>
+<button>encode to constant bitrate</button>
+
+<div id="app">
+    {{ message }}
+</div>
+
+</body>
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue!'
+        }
+    })
+    //document.write(iterateOnFiles(directory,encodeToRegularBitrate))
+</script>
 </html>
